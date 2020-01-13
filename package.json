@@ -1,0 +1,14 @@
+{
+  "name": "ricecookerninja",
+  "version": "1.0.0",
+  "description": "A cooking blog that explores experimental recipes using a rice cooker",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stella Dare",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
