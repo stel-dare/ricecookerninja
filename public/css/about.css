@@ -1,0 +1,65 @@
+
+.about{
+  /* height: 100vh; */
+  /* overflow: hidden; */
+  margin-top: 4em ;
+}
+
+.meImg{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.meImg img{
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+.meText{
+  width: 90%;
+  margin: 2em auto;
+}
+
+hr{
+  width: 55%;
+  margin: 2em auto;
+}
+
+@media only screen and (min-width: 768px) {
+
+.about{
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row-reverse;
+  /* margin-top: 6em; */
+}
+.meImg{
+  width: 45%;
+  margin: auto 2em;
+}
+hr{
+  width: 1%;
+  height: 55%;
+  margin: auto 2em;
+  /* border: 0 0 0 1px; */
+}
+
+.meText{
+  width: 45%;
+  margin: auto 2em;
+}
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+.about{
+  /* margin-top: 8em; */
+}
+
+.meImg{
+  width: 25%;
+  margin: auto 2em;
+}
+}

@@ -1,0 +1,32 @@
+nav, nav a{
+  /* color:#000000; */
+  color: #000000;
+}
+
+.funFoodQuote{
+  width: 85%;
+  margin: 25% auto 0% auto;
+}
+
+.tagsCont{
+  width: 85%;
+  margin: 10% auto 0% auto;
+  padding: 8% 2% 8% 2% ;
+  border: 1px solid;
+  border-left: 0;
+  border-right: 0;
+}
+
+.tag{
+  padding-left: 2%;
+  background: grey;
+}
+
+.postCont{
+  width: 88%;
+  margin: 7% auto;
+}
+
+.post,.postImg,.postImg img{
+  width: 100%;
+}

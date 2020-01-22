@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/about.css">
+    <title></title>
+  </head>
+  <body>
+    <nav>
+      <div class="socialLinks">
+        <a href="#"><span>ricecookerninja</span></a>
+      <!-- <a href="#"><i class="fa fa-github navIcons"></i></a>
+      <a href="#"><i class="fa fa-twitter navIcons"></i></a>
+      <a href="#"><i class="fa fa-linkedin-square navIcons"></i></a> -->
+    </div>
+    <div class="dropdown">
+      <i class="fa fa-bars" onclick="dropdown()" id="hamburger"></i>
+      <div class="dropLinks show" id="dropLinks">
+        <a href="#">RECIPES</a>
+        <a href="#">ABOUT</a>
+      </div>
+    </div>
+    </nav>
+    <main class="about">
+      <div class="meImg">
+        <img src="images/port-i.jpg" alt="">
+      </div>
+      <hr>
+      <div class="meText">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+           Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius. Nunc aliquet bibendum enim facilisis gravida.
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius. Nunc aliquet bibendum enim facilisis gravida.
+        </p>
+      </div>
+    </main>
+    <script type="text/javascript">
+      function dropdown(){
+         document.getElementById("dropLinks").classList.toggle("show");
+         document.getElementById("hamburger").classList.toggle("fa-bars");
+         document.getElementById("hamburger").classList.toggle("fa-times");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+nav, nav a{
+  /* color:#000000; */
+  color: #000000;
+}
+section{
+  margin-top: 15%;
+}
+.mainImgCont{
+  width: 95%;
+  margin: 2% auto;
+}
+
+.mainImgCont img{
+  width: 100%;
+}

@@ -1,0 +1,26 @@
+<%- include('layouts/nav'); -%>
+
+<section class="funFoodQuote">
+  <p>
+    <%= quote%>
+  </p>
+</section>
+
+<section class='tagsCont'>
+<%categories.forEach((cat)=>{%>
+    <span class="tag"><%=cat%></span>
+  <%});%>
+</section>
+
+<section class="postCont">
+<%posts.forEach((post)=>{%>
+    <div class="post">
+      <div class="postImg">
+        <img src="<%=post.image%>" alt="picture of food">
+      </div>
+      <a href="/posts/<%=post.title%>"><p><%=post.title%></p></a>
+    </div>
+  <%});%>
+</section>
+<link rel="stylesheet" href="css/posts.css">
+<%- include('layouts/footer'); -%>

@@ -1,0 +1,124 @@
+html{
+  margin: 0;
+}
+body{
+ /* background: #2b2b28;*/
+/* background:#000000; */
+  margin: 0;
+}
+nav{
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:100;
+  display: flex;
+  justify-content:space-between;
+  align-items:baseline;
+  font-size: 170%;
+  padding:0.3em 0.4em 0 0.4em;
+}
+
+nav, nav a{
+  /* color:#000000; */
+  color: #ffffff;
+}
+nav a{
+  text-decoration: none;
+}
+
+/* .socialLinks a{
+  padding: 0 0.3em 0 0;
+} */
+
+.dropLinks{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+  justify-content: center;
+}
+
+.dropLinks a{
+    font-size: 70%;
+    padding: 1em 1em 0 0;
+}
+
+.show{
+  display: none;
+}
+
+/*******************Nav Ends **************************/
+section{
+  height: 100vh;
+  overflow: hidden;
+  background:url("../images/food-xx.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.intro{
+  width:80%;
+  color: #ffffff;
+  background: rgba(27, 38, 44, 0.7);
+  font-size: 120%;
+  line-height: 1.6;
+  padding: 0.5em;
+  position: absolute;
+  bottom: 8%;
+  left : 8%;
+}
+
+.intro button{
+  border:0;
+  font-size: 100%;
+  padding:0.4em 0.4em;
+  background: #bbe1fa;
+}
+
+
+@media only screen and (min-width: 768px) {
+#hamburger{
+ display: none;
+}
+.show{
+ display: flex;
+}
+.dropLinks{
+ flex-direction: row;
+}
+
+.dropLinks a{
+ padding-left: 3em;
+}
+
+nav{
+ padding-left: 0.8em;
+ padding-right: 0.8em;
+}
+/****************Nav End*************/
+.intro{
+  width:60%;
+  bottom: 15%;
+  left : 18%;
+}
+}
+
+@media only screen and (min-width: 1024px) {
+  .dropLinks a{
+    padding-left: 4em;
+  }
+
+  /* .socialLinks a{
+    padding: 0 0.8em 0 0;
+  } */
+
+  nav{
+    padding-left: 1.5em;
+    padding-right: 1.8em;
+  }
+  /*************NAV End **************/
+  .intro{
+    width:35%;
+    bottom: 30%;
+    left : 30%;
+  }
+}
