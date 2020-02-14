@@ -15,7 +15,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
  Stella.
 `;
 
-const categories = ['Lorem','Lorem','Lorem','Lorem','Lorem'];
+const categories = ['Lorem','Lorem','Lorem','Lorem','vivamus at augue', 'arcu dictum varius','eiusmod tempor incididunt','Nunc aliquet bibendum enim facilisis'];
 
 const posts = [];
 //Homepage
@@ -48,10 +48,11 @@ app.get('/akimbo',function(req,res){
 });
 
 app.post('/publish',function(req,res){
+  let ingredientsArr = req.body.ingrdients.split(',');
   let post = {
     title:req.body.title,
     image:req.body.image,
-    post:req.body.post
+    ingredients:ingredientsArr
   }
   posts.push(post);
   res.redirect('/posts');

@@ -8,7 +8,7 @@
 
 <section class='tagsCont'>
 <%categories.forEach((cat)=>{%>
-    <span class="tag"><%=cat%></span>
+    <div class="tag"><span><%=cat%></span></div>
   <%});%>
 </section>
 
@@ -18,9 +18,13 @@
       <div class="postImg">
         <img src="<%=post.image%>" alt="picture of food">
       </div>
-      <a href="/posts/<%=post.title%>"><p><%=post.title%></p></a>
+      <a class='postTitle' href="/posts/<%=post.title%>"><p><%=post.title%></p></a>
     </div>
   <%});%>
 </section>
+
+<form class="" action="index.html" method="post">
+  <button type="submit" name="button">LOAD MORE RECIPES</button>
+</form>
 <link rel="stylesheet" href="css/posts.css">
 <%- include('layouts/footer'); -%>

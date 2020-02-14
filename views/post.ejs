@@ -6,6 +6,11 @@
   <div class="mainImgCont">
     <img src="<%=post.image%>" alt="">
   </div>
+  <ul id="ingredients">
+  <%  post.ingredients.forEach((ingredient)=>{%>
+      <li><%=ingredient%></li>
+    <%});%>
+  </ul>
 </section>
 <link rel="stylesheet" href="/css/post.css">
 <%- include('layouts/footer'); -%>

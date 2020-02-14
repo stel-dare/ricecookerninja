@@ -1,32 +1,97 @@
-nav, nav a{
-  /* color:#000000; */
+/* nav, nav a{
   color: #000000;
+} */
+.postsLink{
+  color:#A2E9E9;
 }
 
 .funFoodQuote{
   width: 85%;
-  margin: 25% auto 0% auto;
+  /* margin: 25% auto 0% auto; */
+  margin: 5em auto 0 auto;
+  line-height: 1.6;
 }
 
 .tagsCont{
   width: 85%;
-  margin: 10% auto 0% auto;
-  padding: 8% 2% 8% 2% ;
+  /* margin: 10% auto 0% auto; */
+  margin: 2em auto 0 auto;
+  /* padding: 6% 2% 6% 2% ; */
+  padding: 1.2em 0.4em;
   border: 1px solid;
   border-left: 0;
   border-right: 0;
+  overflow:auto;
+  white-space: nowrap;
 }
 
 .tag{
-  padding-left: 2%;
-  background: grey;
+  /* padding:2% 3%; */
+  margin-left: 0.5em;
+  padding: 0.4em 0.6em;
+  background: #3c6562;
+  color: #e4e4e4;
+  width: fit-content;
+  display: inline-block;
 }
 
 .postCont{
-  width: 88%;
-  margin: 7% auto;
+  width: 86%;
+  /* margin: 7% auto; */
+  margin: 1.8em auto;
 }
 
 .post,.postImg,.postImg img{
   width: 100%;
+}
+
+.postTitle{
+  text-decoration: none;
+  color: #222222;
+}
+
+/* form{
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+} */
+
+form button{
+  display: block;
+  border: 1px solid #3c6562;
+  width: 70%;
+  /* margin: 5% auto; */
+  margin: 1em auto;
+  /* padding: 2% 5%; */
+  padding: 0.4em 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  .funFoodQuote{
+    width: 70%;
+    margin: 7em auto 0 auto;
+  }
+
+  .tagsCont{
+    width: 85%;
+    margin: 3em auto 0 auto;
+    padding: 1.6em 0.8em;
+  }
+
+  .tag{
+    margin-left: 0.8em;
+    padding: 0.4em 0.6em;
+  }
+
+  .postCont{
+    display: flex;
+    /* flex-direction: row; */
+    width: 90%;
+    margin: 1.8em auto;
+  }
+
+  .post{
+    width:500%;
+  }
+
 }
