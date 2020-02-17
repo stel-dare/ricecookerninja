@@ -7,13 +7,33 @@
 section{
   height: 100vh;
   overflow: hidden;
-  /* background:url("../images/food-xx.jpg") no-repeat center center fixed; */
-  background:linear-gradient(
+  /***Animation test***/
+  background:url("../images/ninja-1.png") no-repeat center center fixed;
+  /* animation-name: anime; */
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  /* background:linear-gradient(
       rgba(34, 34, 34, 0),
       rgba(34, 34, 34, 0)
-    ),url("../images/ricecooker-lgreen.jpg") no-repeat center center fixed;
+    ),url("../images/ninja-iii.jpg") no-repeat center center fixed; */
+    /* background: url('../images/ninja-iii.jpg') 50% 0 no-repeat; */
   /* background-color: rgba(27, 38, 44, 0.7); */
-  background-size: cover;
+  background-size: contain;
+  /* background-position:center; */
+}
+
+@keyframes anime{
+  0%{
+    /* background-image: url('../images/ninja-ii.jpg'); */
+    background-position: 100% 100%;
+  }
+
+100%{
+  background-position: 0% 0%;
+}
+
 }
 
 .intro{
