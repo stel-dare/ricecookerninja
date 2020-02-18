@@ -8,12 +8,12 @@ section{
   height: 100vh;
   overflow: hidden;
   /***Animation test***/
-  background:url("../images/ninja-1.png") no-repeat center center fixed;
-  /* animation-name: anime; */
-  animation-duration: 5s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
+  background:url("../images/ninja-6.png") no-repeat center center fixed;
+  animation: anime  0.5s cubic-bezier(.36,.07,.19,.97) both;
+  /* animation-duration: 0.5s; */
+  /* animation-fill-mode: forwards; */
+  animation-iteration-count: 5;
+  /* animation-timing-function: ease-in; */
   /* background:linear-gradient(
       rgba(34, 34, 34, 0),
       rgba(34, 34, 34, 0)
@@ -25,14 +25,21 @@ section{
 }
 
 @keyframes anime{
-  0%{
-    /* background-image: url('../images/ninja-ii.jpg'); */
-    background-position: 100% 100%;
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
   }
 
-100%{
-  background-position: 0% 0%;
-}
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
 
 }
 
