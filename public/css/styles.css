@@ -8,20 +8,24 @@ section{
   height: 100vh;
   overflow: hidden;
   /***Animation test***/
-  background:url("../images/ninja-6.png") no-repeat center center fixed;
-  animation: anime  0.5s cubic-bezier(.36,.07,.19,.97) both;
+  /* background:url("../images/ninja-6.png") no-repeat center center fixed; */
+  /* animation: anime  0.5s cubic-bezier(.36,.07,.19,.97) both; */
   /* animation-duration: 0.5s; */
   /* animation-fill-mode: forwards; */
   animation-iteration-count: 5;
   /* animation-timing-function: ease-in; */
-  /* background:linear-gradient(
+  background:linear-gradient(
       rgba(34, 34, 34, 0),
       rgba(34, 34, 34, 0)
-    ),url("../images/ninja-iii.jpg") no-repeat center center fixed; */
+    ),url("../images/ninja-6.png") no-repeat center center fixed;
     /* background: url('../images/ninja-iii.jpg') 50% 0 no-repeat; */
   /* background-color: rgba(27, 38, 44, 0.7); */
   background-size: contain;
   /* background-position:center; */
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 @keyframes anime{
@@ -45,14 +49,15 @@ section{
 
 .intro{
   width:80%;
+  height: fit-content;
   color: #ffffff;
   background: rgba(27, 38, 44, 0.7);
   font-size: 120%;
   line-height: 1.6;
   padding: 0.5em;
-  position: absolute;
+  /* position: absolute;
   bottom: 8%;
-  left : 8%;
+  left : 8%; */
 }
 
 .intro button{
@@ -68,15 +73,15 @@ section{
 @media only screen and (min-width: 768px) {
 .intro{
   width:60%;
-  bottom: 15%;
-  left : 18%;
+  /* bottom: 15%;
+  left : 18%; */
 }
 }
 
 @media only screen and (min-width: 1024px) {
   .intro{
     width:35%;
-    bottom: 30%;
-    left : 30%;
+    /* bottom: 30%;
+    left : 30%; */
   }
 }
