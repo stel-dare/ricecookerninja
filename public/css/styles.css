@@ -185,17 +185,34 @@ background: #b9d2d2;
 
 
 @media only screen and (min-width: 768px) {
-.intro{
-  width:60%;
-  /* bottom: 15%;
-  left : 18%; */
+
+.steamText{
+  /* margin-left: 6em; */
+  align-self: center;
 }
+
+.steamText p, .steam{
+  font-size: 230%;
+}
+
 }
 
 @media only screen and (min-width: 1024px) {
-  .intro{
-    width:35%;
-    /* bottom: 30%;
-    left : 30%; */
+  .steamText{
+    /* margin-left: 9em; */
   }
+
+  .steamText p, .steam{
+    font-size: 250%;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    .steamText{
+      /* margin-left: 15em; */
+    }
+
+    .steamText p, .steam{
+      font-size: 270%;
+    }
+
 }

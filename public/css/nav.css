@@ -42,6 +42,7 @@ nav a{
 }
 
 .dropLinks a{
+    font-family: 'Lato';
     font-size: 70%;
     padding: 0.7em 1em 0.7em 0;
 }
