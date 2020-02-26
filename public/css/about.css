@@ -1,87 +1,55 @@
 .aboutLink{
   color:#A2E9E9;
 }
+
 .about{
-  margin-top: 4em ;
+  display: flex;
+  flex-direction: column;
 }
 
 .meImg{
-  width: 65%;
-  margin: 0 auto;
+  width: 100%;
 }
-
+/*http://www.kathrynmcclintock.com/*/
 .meImg img{
-  border-radius: 50%;
-  max-width: 100%;
+width: 100%;
+height: 100%;
 }
 
-.meText{
-  width: 85%;
-  margin: 2em auto;
+.meText {
   line-height: 1.5;
+  padding:2em 1em;
+  font-family: 'Merriweather';
 }
 
-hr{
-  width: 45%;
-  margin: 2em auto;
-}
-/*******About Ends************/
-.jumbotron{
-  background: #222222;
-  color:#e4e4e4;
-  /* width: 100%; */
-  padding: 0.5em 1em;
+.jumbCont{
+  font-family: 'Lato';
+  font-size: 120%;
+  font-weight: bold;
 }
 
-.social{
-  padding-top: 0.5em;
-  line-height: 1.5;
-}
 .social a{
-  color:#e4e4e4;
+  color:#222222;
   text-decoration: none;
   font-size: 150%;
   padding-right: 0.6em;
 }
 
 @media only screen and (min-width: 768px) {
-.about{
-  display: flex;
-  flex-direction: row-reverse;
-  margin-top: 13%;
-  margin-bottom: 4%;
-}
-.meImg{
-  width: 45%;
-  margin: auto 2em;
-}
-hr{
-  width: 0%;
-}
-
 .meText{
-  width: 45%;
-  margin: auto 2em;
+  padding: 5em 6em;
+  line-height: 1.8;
 }
-
-.jumbCont{
-  width: 65%;
-  margin: 0 auto;
-  text-align: center;
-}
-
 }
 
 @media only screen and (min-width: 1024px) {
 .about{
-width: 65%;
-margin: 13% auto 4% auto;
+  flex-direction: row;
 }
-.meImg{
-  width: 25%;
-  margin: auto 2em;
-}
-.jumbCont{
-  width: 45%;
-}
+
+/* .meImg , .meText{
+  width: 48vw;
+  height: 100vh;
+} */
+
 }
