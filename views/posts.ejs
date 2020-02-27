@@ -2,7 +2,9 @@
 
 <section class="funFoodQuote">
   <p>
+    "
     <%= quote%>
+    "
   </p>
 </section>
 
@@ -16,9 +18,12 @@
 <%posts.forEach((post)=>{%>
     <div class="post">
       <div class="postImg">
-        <img src="<%=post.image%>" alt="picture of food">
+        <a class='postTitle' href="/posts/<%=post.title%>"><img src="<%=post.image%>" alt="picture of food"/></a>
       </div>
+      <div class="postDetails">
       <a class='postTitle' href="/posts/<%=post.title%>"><p><%=post.title%></p></a>
+      <p class="ingredients"><span>Ingredients: </span>rice , tomatoes, green pepper , spring onions</p>
+    </div>
     </div>
   <%});%>
 </section>

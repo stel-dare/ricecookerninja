@@ -8,8 +8,11 @@
 .funFoodQuote{
   width: 85%;
   /* margin: 25% auto 0% auto; */
-  margin: 5em auto 0 auto;
+  margin: 4em auto 0 auto;
   line-height: 1.6;
+  font-family: 'Lato';
+  font-size: 120%;
+  font-weight: bold;
 }
 
 .tagsCont{
@@ -23,7 +26,30 @@
   border-right: 0;
   overflow:auto;
   white-space: nowrap;
+  font-family: 'Merriweather';
+  font-size: 115%;
 }
+
+/* .tagsCont::-webkit-scrollbar {
+  display: none;
+} */
+
+/* .tagsCont::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.tagsCont::-webkit-scrollbar
+{
+	width: 100px;
+	background-color: #F5F5F5;
+}
+
+.tagsCont::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+} */
 
 .tag{
   /* padding:2% 3%; */
@@ -39,6 +65,9 @@
   width: 86%;
   /* margin: 7% auto; */
   margin: 1.8em auto;
+  font-family: 'Merriweather';
+  font-size: 110%;
+  font-weight: bold;
 }
 
 .post,.postImg,.postImg img{
@@ -50,6 +79,16 @@
   color: #222222;
 }
 
+
+.post .ingredients{
+  font-weight: normal;
+  /* font-style: italic; */
+  font-family: 'Lato';
+}
+
+.post{
+  margin: 2em 0em;
+}
 /* form{
   display: block;
   width: 70%;
@@ -64,16 +103,18 @@ form button{
   margin: 1em auto;
   /* padding: 2% 5%; */
   padding: 0.4em 1em;
+  font-family: 'Merriweather';
+  font-weight: bold;
 }
 
 @media only screen and (min-width: 768px) {
   .funFoodQuote{
-    width: 70%;
-    margin: 7em auto 0 auto;
+    width: 60%;
+    margin: 5em auto 0 auto;
   }
 
   .tagsCont{
-    width: 85%;
+    width: 65%;
     margin: 3em auto 0 auto;
     padding: 1.6em 0.8em;
   }
@@ -84,14 +125,61 @@ form button{
   }
 
   .postCont{
-    display: flex;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; */
     /* flex-direction: row; */
-    width: 90%;
+    width: 85%;
     margin: 1.8em auto;
   }
 
   .post{
-    width:500%;
+    /* width:45%; */
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 2.5em 0em;
   }
 
+  .postImg, .postDetails{
+    width: 45%;
+  }
+
+  form button{
+    width: 50%;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+  /* .post{
+    width:30%;
+  } */
+
+  .funFoodQuote{
+    width: 50%;
+  }
+
+  .postCont{
+    width: 60%;
+  }
+
+  .tagsCont{
+    width: 55%;
+  }
+
+  form button{
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /* .post{
+    width:20%;
+  } */
+
+  .postCont{
+    width: 40%;
+  }
 }
